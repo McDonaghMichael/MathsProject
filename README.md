@@ -1,10 +1,10 @@
 # MathsProject
 
 ## Who works on what
-## Front End
+__Front End__
 **HTML** - Hovan
 **CSS** - Dmytro
 **JS** - Vicktor
 
-## Back End
+__Back End__
 **PHP** - Michael
