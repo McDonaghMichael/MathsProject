@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+.field {
+    box-sizing: border-box;
+    padding-left: 18px;
+    width: 25%;
+    height: 45px;
+    font-size: 14px;
+    border: none;
+    background-color: #f4f7f6;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.field:focus {
+    border-bottom: 2px solid #554e2e;
+}
+
+.submit-button {
+    margin-top: 15px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background-color: #ae9e5f;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 25%;
+    font-weight: 900;
+}
+
+.submit-button:hover {
+    border-bottom: 2px solid #554e2e;
+}
+
+label {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    display : block;
+}
+
+
+
