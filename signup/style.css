@@ -2,7 +2,7 @@
 .field {
     box-sizing: border-box;
     padding-left: 18px;
-    width: 25%;
+    width: 100%;
     height: 45px;
     font-size: 14px;
     border: none;
@@ -26,7 +26,7 @@
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-    width: 25%;
+    width: 100%;
     font-weight: 900;
 }
 
@@ -40,6 +40,25 @@ label {
     font-weight: 500;
     font-size: 18px;
     display : block;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ae9e5f;
+}
+
+.contact-container{
+    width: 500px;
+    height : 300x;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 10px solid black;
+    padding: 10px;
+    background-color: white;
 }
 
 
