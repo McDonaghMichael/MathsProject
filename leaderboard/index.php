@@ -7,7 +7,11 @@
     <title>Maths Game | Leaderboard</title>
 </head>
 <body>
-    <?php include "../extras/navbar.php"; ?>
+    <?php
+    // Imports the navigation bar
+    include "../extras/navbar.php"; 
+    ?>
+
     <div class="container">
         <table class="table-container">
             <tr>
@@ -18,7 +22,10 @@
 
             <?php
                 
+                // Imports the database stuff
                 require('.././database/db.php');
+
+                
                 $query = "SELECT `username`, `score` FROM `users` ORDER BY convert(`score`, UNSIGNED INTEGER) DESC;";
                 $result = mysqli_query($con, $query) or die(mysql_error());
                 $counter = 1;

@@ -8,7 +8,10 @@
 </head>
 <body>
 <?php
-    include "../extras/navbar.php";
+
+    // Imports the navigation bar
+    include "../extras/navbar.php"; 
+
     require('.././database/db.php');
     // When form submitted, insert values into the database.
     if (isset($_REQUEST['username'])) {
@@ -44,6 +47,10 @@
             <button class="submit-button" type="submit">Sign up</button>
         </form> 
     </div>  
+    <?php 
+    // Imports the footer
+    include "../extras/footer.php";
+    ?>
 <?php
     }
 ?> 

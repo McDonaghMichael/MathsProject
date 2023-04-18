@@ -1,7 +1,7 @@
 <?php echo '
 
 <div class="footer">
-  <p>Created by cksdamc;acm;</p>
+  <p class="footer-text">Created by Hovan, Dmytro, Viktor, Michael McD, Michael Ferry</p>
 </div>'
 
 ?>

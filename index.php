@@ -17,24 +17,32 @@ include("./scripts/auth_session.php");
             <h2 id="question">Question Text</h2>
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-4">
-                    <button type="button" name="answer" id="a-btn" class="answer">
-                        <span id="a_text">Answer A</span>
-                    </button>
+                    <div class="question-button">
+                        <button type="button" name="answer" id="a-btn" class="answer">
+                            <span id="a_text">Answer A</span>
+                        </button>
+                    </div>        
                 </div>
                 <div class="col-md-6 col-sm-12 mt-4">
-                    <button type="button" name="answer" id="b-btn" class="answer">
-                        <span id="b_text">Answer B</span>
-                    </button>
+                    <div class="question-button">
+                        <button type="button" name="answer" id="b-btn" class="answer">
+                            <span id="b_text">Answer B</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="col-md-6 col-sm-12 mt-4">
-                    <button type="button" name="answer" id="c-btn" class="answer">
-                        <span id="c_text">Answer C</span>
-                    </button>
+                    <div class="question-button">
+                        <button type="button" name="answer" id="c-btn" class="answer">
+                            <span id="c_text">Answer C</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="col-md-6 col-sm-12 mt-4">
-                    <button type="button" name="answer" id="d-btn" class="answer">
-                        <span id="d_text">Answer D</span>
-                    </button>
+                    <div class="question-button">
+                        <button type="button" name="answer" id="d-btn" class="answer">
+                            <span id="d_text">Answer D</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

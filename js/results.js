@@ -7,5 +7,3 @@ console.log(score);
 document.getElementById("score").innerHTML = "Score: " + score;
 
 document.getElementById("result-num").value = score;
-
-document.result.submit();
