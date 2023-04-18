@@ -1,38 +1,3 @@
-/*const quizData = [
-    {
-        question: "Question 1",
-        a: "a",
-        b: "b",
-        c: "c",
-        d: "d",
-        correct: "d",
-    },
-    {
-        question: "Question 2",
-        a: "a",
-        b: "b",
-        c: "c",
-        d: "d",
-        correct: "b",
-    },
-    {
-        question: "Question 3",
-        a: "a",
-        b: "b",
-        c: "c",
-        d: "d",
-        correct: "a",
-    },
-    {
-        question: "Question 4",
-        a: "a",
-        b: "b",
-        c: "c",
-        d: "d",
-        correct: "b",
-    },
-];*/
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * max) + 1;
   }
@@ -66,7 +31,7 @@ function addBinaryQuestion(){
         // Pushes 4 random binary numbers to the binaryOptions array
         for(i = 0; i < questionCount; i++){
             do{
-                randomNumber = getRandomInt(1000);
+                randomNumber = getRandomInt(25);
                 binary = randomNumber.toString(2);
                 if(binary.length === 1) binary = "00000" + binary;
                 if(binary.length === 2) binary = "0000" + binary;
@@ -149,6 +114,7 @@ function deselectAnswers() {
     
 function getSelected() {
     let answer = null;
+    if(quizData[currentQuestion - 1] == null) return;
     if (aBtn.classList.contains('selected')) {
     answer = quizData[currentQuestion - 1].a;
     } else if (bBtn.classList.contains('selected')) {
@@ -178,7 +144,7 @@ answerButtons.forEach(button => {
             loadQuiz();
         } else {
             localStorage.setItem("score", score);
-            window.location.href = "../results/";
+            window.location.href = "../results?score=" + score;
         }
     });
 });
